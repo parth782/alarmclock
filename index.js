@@ -1,4 +1,4 @@
-console.log("hello");
+
 $('#success').hide();
 $('#danger').hide();
 var audio=new Audio("http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Sevish_-__nbsp_.mp3");
@@ -17,7 +17,7 @@ function setalarm(e){
    
     const alarm=document.getElementById("alarm");
     const alarmdate=new Date(alarm.value);
-    console.log(`setting alarm for ${alarmdate}`);
+   // console.log(`setting alarm for ${alarmdate}`);
     
 
     if(alarmdate=="Invalid Date"){
@@ -36,7 +36,7 @@ function setalarm(e){
     }
     const now=new Date();
     let timetoalarm=alarmdate-now;
-    console.log(timetoalarm);
+  //  console.log(timetoalarm);
     
     if(timetoalarm>=0){
         setTimeout(()=>{
